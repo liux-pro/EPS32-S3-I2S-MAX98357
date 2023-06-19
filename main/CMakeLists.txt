@@ -1,5 +1,5 @@
 idf_component_register(
-        SRCS "i2s_test.c"
+        SRC_DIRS "."
         INCLUDE_DIRS "."
-        EMBED_FILES o.pcm
 )
+target_compile_options(${COMPONENT_LIB} PRIVATE -w)
